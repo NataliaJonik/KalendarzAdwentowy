@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+.btn-start {
+	background-color: red;
+	color: white;
+	border: 2px solid #512751;
+	border-radius: 15px;
+	margin: 15px auto;
+	display: block;
+	width: 10rem;
+	height: 2rem;
+}
+
+.container {
+	width: 800px;
+	height: 900px;
+	border: 5px solid black;
+	margin: 15px auto;
+	background-image: url("./assets/rudolf.jpg");
+	background-size: cover;
+	box-shadow:6px 6px 20px gray;
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	grid-template-rows: repeat(6, 1fr);
+	grid-template-areas:
+		"door10 door3 door20 door23"
+		"door5 door18 door2 door7"
+		"door13 door19 door21 door12"
+		"door8 door1 door15 door6"
+		"door17 door11 door22 door24"
+		"door4 door14 door9 door16";
+}
+
+.image {
+	background-image: none;
+	background-size: cover;
+	background-position: center; 
+
+}
+
+.text {
+	height: 100%;
+	width: 100%;
+	color: black;
+	padding: 10px;
+	border: 2px solid black; 
+	transition: opacity 2.5s;
+}
